@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+{% block headTitle %}Word Search!{% endblock %}
+
+{% block headerTitle %}Word Search!{% endblock %}
+
+{% block content %}
+    <div class="wordsearch" >
+        {% for string in wordrow: %}
+        <p class="row_{{string[0]}}">
+            {{"   ".join(string)}}
+        </p>
+
+        {%endfor%}
+
+    </div>
+{% endblock %}
+    
+
+
+
+
+
+</html>

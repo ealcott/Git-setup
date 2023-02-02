@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block headTitle %}Ascii Art!{% endblock %}
+
+{% block headerTitle %}Ascii Art ({{art}})!{% endblock %}
+
+{% block content %}
+
+    <div class="ascii art" >
+        <pre>
+            {{line}}
+        </pre>
+
+    </div>
+
+    <hr>
+    <p>find more ascii art <a href="https://www.asciiart.eu/animals">here</a></p>
+{% endblock %}

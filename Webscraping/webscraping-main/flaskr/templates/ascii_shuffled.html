@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+{% block headTitle %}Ascii Art!{% endblock %}
+
+{% block headerTitle %}Shuffled Ascii Art ({{art}})!{% endblock %}
+
+{% block content %}
+
+    <div class="ascii art" >
+        {% for ind, l in lines: %}
+        <p class="row_{{ind}}">
+            {{l}}
+        </p>
+
+        {%endfor%}
+
+    </div>
+    <hr>
+    <div class="randomStuff">
+        <p>don't scrape me</p>
+        <p class="rowrowrowyourboat">or me</p>
+        <p class="row_wor">definitely not me</p>
+    </div>
+{% endblock %}
